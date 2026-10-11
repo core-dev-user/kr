@@ -1,0 +1,25 @@
+{
+  "name": "@lingua/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "db:migrate": "tsx src/migrate.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@lingua/core": "*",
+    "fastify": "^5.6.0",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "pg": "^8.16.3",
+    "zod": "^4.1.11",
+    "jose": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "lingua-six",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "mobile": "npm run start -w @lingua/mobile",
+    "web": "npm run web -w @lingua/mobile",
+    "api": "npm run dev -w @lingua/api",
+    "db:migrate": "npm run db:migrate -w @lingua/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build:web": "npm run build:web -w @lingua/mobile",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^22.18.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Lingua · seis meses",
+    "slug": "lingua-six",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "dev.lingua.six" },
+    "android": { "package": "dev.lingua.six" },
+    "web": { "bundler": "metro", "output": "single" }
+  }
+}
