@@ -46,6 +46,8 @@ Em uma máquina com diretório pessoal restrito, use `npm ci --cache /workspace/
 
 ## Entregas
 
+Para hospedar a versão web, veja [Publicar na Vercel](docs/vercel.md). O deploy usa o export estático de `apps/mobile/dist`; a API não precisa iniciar para abrir o aplicativo.
+
 - [Arquitetura, fluxos, API e evolução](docs/architecture.md).
 - [Schema SQL executável](database/001_initial.sql) e [modelo de dados explicado](docs/data-model.md).
 - [Design system e regras de interação](docs/design-system.md).
